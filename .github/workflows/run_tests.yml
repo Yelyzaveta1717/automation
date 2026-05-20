@@ -2,14 +2,14 @@ name: UI and API Tests
 
 on:
   push:
-    branches: [ "main"]
+    branches: [ "main" ]
 
 jobs:
-  tests-and-report:
+  test-and-report:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 1.Скачиваеем код для нашего проекта на сервер
+      - name: 1. Скачиваем код нашего проекта на сервер
         uses: actions/checkout@v4
 
       - name: 2. Устанавливаем Python 3.10
@@ -21,13 +21,13 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: 4. Запускаем автотесты
-        run: pytest swag_shop/tests/tests/ -v --alluredir=allure-results
+        run: pytest swag_shop/tests/ -v --alluredir=allure-results
 
         continue-on-error: true
 
-      - name: 5. Генерируем allure отчет
+      - name: 5. Генерируем Allure отчет
         uses: simple-elf/allure-report-action@master
-        if : always()
+        if: always()
         with:
           allure-results: allure-results
           allure-report: allure-report
