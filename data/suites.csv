@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","2387","Проверка целостности данных: каталог - корзина","swag_shop.tests","Wed May 20 16:55:56 UTC 2026","passed","Wed May 20 16:55:58 UTC 2026","","tests","",""
+"","2389","Успешныц вход и добавление товаров в корзину","swag_shop.tests","Wed May 20 16:55:49 UTC 2026","failed","Wed May 20 16:55:52 UTC 2026","","tests","",""
+"","867","Успешныц вход и добавление товаров в корзину","swag_shop.tests","Wed May 20 16:55:44 UTC 2026","passed","Wed May 20 16:55:45 UTC 2026","","tests","",""
